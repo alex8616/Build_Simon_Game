@@ -1,0 +1,100 @@
+body {
+    width: 99%;
+    font-family: 'Merriweather', serif;
+    background-image: url("https://i.ibb.co/y4fSRY4/df.jpg");
+
+}
+.title{
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 100px;
+}
+.simon {
+    float: left;
+    left: 25%;
+    width: 30%;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.round2 {
+    right: 50%;
+    padding: 5%;
+    font-size: 90px;
+    margin-top: 10px;
+    margin-left: 350px;
+    width: 200px; 
+    height: 120px; 
+    font-family: "SF Digital Readout";
+}  
+
+.buttonContainer {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    transform: rotate(45deg);
+}
+.square {
+    margin-top:-5px;
+    margin-left: -20px;
+    width: 130px; 
+    height: 130px; 
+    border-style: solid;
+    border-width: 20px;
+    border-color: black;     
+    border-radius: 0 100% 0 0;
+    margin-bottom:-10px;
+    
+}
+
+.square:active,
+.active {
+    filter: brightness(135%);
+}
+
+.red {
+    background-color: #f13920;
+    transform: rotate(270deg);    
+}
+
+.blue {
+    background-color: #1653d5;
+    transform: rotate(180deg);
+}
+
+.green {
+    background-color: #238043;
+    transform: rotate(90deg);
+    box-shadow: 80px 6px 100px;   /* Sombra con un desenfoque casi disipado */
+    
+}
+
+.yellow {
+    background-color: #ffd52c;
+}
+
+#startButton {
+    width: 20%;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #587792;
+    padding: 10px;
+}
+
+#startButton:disabled {
+    background-color: red;
+}
+
+.winner {
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin { 
+    100% { transform:rotate(180deg) } }
